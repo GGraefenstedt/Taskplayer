@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taskplayer.Views.AllTasksView"
+             Title="AllTasksView">
+    <VerticalStackLayout>
+        <Label 
+            Text="Here you can see all your tasks and create new ones"
+            VerticalOptions="Center" 
+            HorizontalOptions="CenterAndExpand" />
+        <ScrollView
+            HorizontalOptions="CenterAndExpand"
+            HorizontalScrollBarVisibility="Default">
+            
+        </ScrollView>
+        <Button
+            x:Name="CreateNewBtn"
+            Text="Create new Task"
+            Clicked="CreateNewBtn_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

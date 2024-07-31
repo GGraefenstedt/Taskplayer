@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taskplayer.Views.TaskCreationView"
+             Title="TaskCreationView">
+    <VerticalStackLayout
+        Padding="20" Spacing="15">
+        
+        <Label 
+            Text="Create a new Task to be completed"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry
+            x:Name="TitleEntry"
+            Placeholder="Give your Task a title"
+            SemanticProperties.Hint="Give your Task a title"/>
+        <Entry
+            x:Name="PointsEntry"
+            Placeholder="Set how many points completing the Task should give"
+            SemanticProperties.Hint="Set how many points completing the Task should give"/>
+        <Entry
+            x:Name="DescriptionEntry"
+            Placeholder="Describe your Task in more detail"
+            SemanticProperties.Hint="Describe your Task in more detail"/>
+        <Entry
+            x:Name="DateDueEntry"
+            Placeholder="set a date when your Task expires"
+            SemanticProperties.Hint="set a date when your Task expires"/>
+        <Button
+            x:Name="AddEntryButton"
+            Clicked="AddEntryButton_Clicked"
+            Text="Add Task"
+            SemanticProperties.Hint="Add the Task you just entered"/>
+    </VerticalStackLayout>
+</ContentPage>
